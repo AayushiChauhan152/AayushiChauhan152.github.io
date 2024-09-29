@@ -1,0 +1,387 @@
+/*index.css*/
+/* Styles defined for the desktop or the bigger screen devices*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h6 {
+    font-size: 0.95rem;
+}
+
+.spelling-underline {
+    text-decoration-line: underline;
+    text-decoration-color: #6b69d6;
+}
+
+/* Header Navbar Styles */
+nav {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #000;
+}
+
+.logo {
+    padding: 0 5rem;
+}
+
+.logo .logo-heading {
+    color: #fff;
+    font-size: 22px;
+}
+
+.menu {
+    padding: 0 5rem;
+}
+
+.menu .menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-list .menu-list-items {
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 856px) and (max-width: 1024px) {
+    .menu-list .menu-list-items {
+        padding: 0.5rem 0.3rem;
+    }
+}
+
+/* Main Hero Section Styles */
+.hero {
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4.8rem 0;
+    text-align: center;
+}
+
+.hero .intro {
+    text-align: center;
+    margin: 0 5rem;
+}
+
+.hero .intro-buttons {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* About section styles */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 20px 0;
+    padding-top: 40px;
+}
+
+.intro-buttons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 30%;
+}
+
+.intro-buttons a {
+    text-decoration: none;
+}
+
+.intro-buttons span {
+    margin-left: 30px;
+    margin-right: 3px;
+}
+
+.welcome-line {
+    padding-top: 20px;
+}
+
+/* Portfolio section styles */
+.portfolio {
+    margin: 4.8rem 0;
+    padding: 0 5rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.portfolio-content {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    max-width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-weight: bold;
+    max-height: 2px;
+    margin-bottom: 0;
+    margin-top: 3px;
+    padding-bottom: 0;
+}
+
+.card-date {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    margin-bottom: 7px;
+}
+
+.card-subtitle {
+    font-size: 1.2rem;
+    margin: 7px 0;
+    line-height: 1.4;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.read-more {
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.intro-buttons {
+    margin-top: 15px;
+}
+
+/* Services section styles */
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4.8rem 0;
+    padding: 0 5rem;
+}
+
+.services-content {
+    margin-top: 80px;
+}
+
+.my-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.my-row .my-col {
+    text-align: center;
+    width: 30%;
+}
+
+.my-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: linear-gradient(#6b69d6, #4f4d9e, #1b1b42);
+    padding: 1rem;
+    color: white;
+}
+
+.my-card img {
+    border-radius: 0.8rem;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+}
+
+.footer-list-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 1rem 1rem 0 1rem;
+    border-radius: 50%;
+    background-color: #4f4d9e;
+}
+
+.footer-list-items:hover {
+    background-color: #1b1b42;
+}
+
+.footer-links {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-menu {
+    padding: 0 5rem;
+}
+
+.footer-menu .footer-menu-list {
+    display: flex;
+    list-style: none;
+}
+
+
+
+
+
+
+/* utility classes */
+.greet-heading {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.my-heading {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-heading {
+    padding-top: 1px;
+    color: #ccc;
+    font-weight: lighter;
+}
+
+.links:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.links {
+    border-bottom: 2px solid transparent;
+    transition: all 0.25s;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: none;
+}
+
+
+.ghost-btn {
+    background-color: #4f4d9e;
+    color: white;
+    border: 2px solid #1b1b42;
+    outline: none;
+    text-decoration: none;
+}
+
+.ghost-btn:hover {
+    background-color: #1b1b42;
+    color: #fff;
+    transition: all 0.25s;
+    border: 2px solid #4f4d9e;
+    ;
+}
+
+.heading-span {
+    font-weight: bolder;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.small-para {
+    font-size: 14px;
+    color: #fff;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.blue-text {
+    color: #4f4d9e;
+}
