@@ -13,10 +13,10 @@
 <body class="bg-black text-white">
 
     <!-- Navbar header section -->
-    <header class="bg-black fixed w-full z-10 shadow-md">
-        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-            <div class="text-2xl font-bold text-indigo-500">ByteGal {}</div>
-            <div class="hidden md:flex space-x-8">
+    <header class="bg-black fixed w-full z-10 shadow-md pt-8">
+        <nav class="container mx-auto flex justify-between items-center py-6 px-8">
+            <div class="text-xl font-bold text-indigo-500">ByteGal {}</div>
+            <div class="hidden md:flex space-x-8 text-xl">
                 <a href="#home" class="hover:text-indigo-400">Home</a>
                 <a href="#about" class="hover:text-indigo-400">About</a>
                 <a href="#services" class="hover:text-indigo-400">Projects</a>
@@ -26,85 +26,119 @@
     </header>
 
     <!-- Main hero banner -->
-    <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center"
-        style="background-image: url('./path-to-your-image');">
+    <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center">
         <div class="text-center">
-            <h3 class="text-2xl">Hello, I'm</h3>
+            <h3 class="text-2xl text-gray-400">Hello, I'm</h3>
             <h1 class="text-8xl font-bold pt-5 pb-3">Aayushi Chauhan</h1>
-            <h4 class="text-xl mt-4">Backend Developer | Java Developer | Python Developer | Programmer</h4>
+            <h4 class="text-4xl mt-4"><span class="role text-indigo-500"></span></h4>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-20">
         <div class="max-w-3xl mx-auto text-center px-5">
-            <p class="text-center">Let me introduce myself</p>
-            <h1 class="text-7xl font-bold text-center mb-6 underline decoration-indigo-500">About Me</h1>
-            <p class="text-center text-indigo-400">Backend Developer who loves to play with APIs</p>
-            <p class="mt-10 text-gray-400 pt-8">Welcome to My Portfolio!</p>
-            <p class="mt-4">A passionate backend developer with a love for crafting robust and efficient applications. I
-                specialize in Python with the Django framework and Java with Spring Boot, Hibernate, and JPA, alongside
-                a strong foundation in MySQL databases. On the frontend, I bring designs to life using HTML, CSS,
-                Bootstrap, and JavaScript, ensuring a seamless user experience. My journey in tech is fueled by a
-                constant desire to learn and embrace new technologies, allowing me to stay ahead in this ever-evolving
-                field.</p>
-            <div class="text-center mt-10 pt-10">
+            <p class="text-center text-gray-400 mb-3">Let me introduce myself</p>
+            <h1 class="text-7xl font-bold text-center mb-10 underline pb-10">About me</h1>
+            <p class="text-center text-indigo-400 font-bold text-5xl">Backend Developer who loves to play with
+                APIs
+            </p>
+            <p class="mt-6 text-lg text-gray-300 leading-relaxed">
+                I'm a dedicated backend developer specializing in creating robust and efficient applications. My
+                expertise lies in Python (Django) and Java (Spring Boot, Hibernate, JPA), with a strong foundation in
+                MySQL and MongoDB databases.
+                I enjoy bringing designs to life on the frontend using HTML, CSS, Bootstrap, Tailwind, and JavaScript,
+                delivering seamless user experiences.
+                As a constant learner, I’m always exploring new technologies to stay at the forefront of the tech
+                industry.
+            </p>
+            <div class="mt-10 items-center">
                 <a class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700"
                     href="./images/AayushiChauhan.pdf">Get Resume</a>
-                <div class="mt-4">
-                    <h4>Email:</h4>
-                    <a href="mailto:ayurana87@gmail.com" class="text-purple-600">ayurana87@gmail.com</a>
-                </div>
             </div>
+            <div class="mt-10 flex justify-between items-center">
+                <h4 class="text-white">
+                    Email:
+                    <span><a href="mailto:ayurana87@gmail.com" target="_blank"
+                            class="text-purple-600 ml-2 underline">ayurana87@gmail.com</a></span>
+                </h4>
+                <h4 class="text-white">
+                    Availability:
+                    <span>Open to work</span>
+                </h4>
+            </div>
+
+
+            <div class="flex justify-start space-x-6 mt-4">
+                <a href="https://github.com/AayushiChauhan152" target="_blank" class="text-white hover:text-gray-500">
+                    <i class="fab fa-github fa-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aayushi-chauhan-2b3b1422a/" target="_blank"
+                    class="text-white hover:text-gray-500">
+                    <i class="fab fa-linkedin-in fa-xl"></i>
+                </a>
+            </div>
+
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="services" class="py-20 bg-black">
+    <section id="services" class="py-20 px-16">
         <div class="container mx-auto px-6">
-            <p class="text-center">Some of my work!</p>
-            <h1 class="text-7xl font-bold text-center mb-10 underline decoration-indigo-500 pb-10">Projects</h1>
+            <p class="text-center text-gray-400 mb-3">Some of my work!</p>
+            <h1 class="text-7xl font-bold text-center mb-10 underline pb-10">Projects</h1>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <div class="bg-gray-800 p-6 rounded-lg text-center">
-                    <img src="./images/sorting.png" alt="Sorting Algorithm Visualizer" class="rounded-lg mb-4">
-                    <h3 class="text-xl font-bold">Sorting Algorithm Visualizer</h3>
-                    <p class="mt-2">Python | Django | HTML5 | Bootstrap | JavaScript</p>
+                    <img src="./images/contactvault.png" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold text-white">ContactVault - A smart contact management website</h3>
+                    <p class="mt-2 mb-5 text-gray-400">Java | Spring boot | HTML5 | Tailwind CSS | JavaScript</p>
+                    <a href="https://github.com/AayushiChauhan152/Contact-Management" target="_blank"
+                        class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">View Work →</a>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-lg text-center">
+                    <img src="./images/sorting.png" alt="Sorting Algorithm Visualizer"
+                        class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold text-white">Sorting Algorithm Visualizer</h3>
+                    <p class="mt-2 mb-5 text-gray-400">Python | Django | HTML5 | Bootstrap | JavaScript</p>
                     <a href="https://sorting-algorithm-website.onrender.com/" target="_blank"
-                        class="text-indigo-500 mt-4 block">Live</a>
+                        class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">View Work →</a>
                 </div>
 
                 <div class="bg-gray-800 p-6 rounded-lg text-center">
-                    <img src="./images/audio.png" alt="Sorting Algorithm Visualizer" class="rounded-lg mb-4">
-                    <h3 class="text-xl font-bold">Text/Audio To Sign Language Converter</h3>
-                    <p class="mt-2">Python | Django | HTML5</p>
-                    <a href="https://speech-to-sign-language-translator-a69s.onrender.com" target="_blank"
-                        class="text-indigo-500 mt-4 block">Live</a>
+                    <img src="./images/blog.png" alt="Text/Audio To Sign Language Converter"
+                        class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold text-white">Blogify- A blog website</h3>
+                    <p class="mt-2 mb-5 text-gray-400">Java | HTML5 | Bootstrap CSS | JavaScript</p>
+                    <a href="https://github.com/AayushiChauhan152/Blog-WebApp-Using-Java" target="_blank"
+                        class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">View Work →</a>
                 </div>
 
                 <div class="bg-gray-800 p-6 rounded-lg text-center">
-                    <img src="./images/text-to-speech.png" alt="Sorting Algorithm Visualizer" class="rounded-lg mb-4">
-                    <h3 class="text-xl font-bold">Text to Speech Converter</h3>
-                    <p class="mt-2">HTML | CSS | JavaScript</p>
-                    <a href="https://text-to-speech-converter-iyf8.onrender.com/" target="_blank"
-                        class="text-indigo-500 mt-4 block">Live</a>
+                    <img src="./images/audio.png" alt="Text/Audio To Sign Language Converter"
+                        class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold text-white">Text/Audio To Sign Language Converter</h3>
+                    <p class="mt-2 mb-5 text-gray-400">Python | Django | HTML5</p>
+                    <a href="https://github.com/AayushiChauhan152/Blog-WebApp-Using-Java" target="_blank"
+                        class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">View Work →</a>
                 </div>
 
                 <div class="bg-gray-800 p-6 rounded-lg text-center">
-                    <img src="./images/Screenshot 2023-11-24 163704.png" alt="Sorting Algorithm Visualizer"
-                        class="rounded-lg mb-4">
-                    <h3 class="text-xl font-bold">Pokemon Search App</h3>
-                    <p class="mt-2">HTML | CSS | JavaScript</p>
-                    <a href="https://pokemon-search-application.onrender.com" target="_blank"
-                        class="text-indigo-500 mt-4 block">Live</a>
+                    <img src="./images/csv-uploader.png" alt="Sorting Algorithm Visualizer"
+                        class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold text-white">CSV Uploader</h3>
+                    <p class="mt-2 mb-5 text-gray-400">Python | Django | Pandas | HTML | Bootstrap </p>
+                    <a href="https://github.com/AayushiChauhan152/CSV-Uploader" target="_blank"
+                        class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">View Work →</a>
                 </div>
 
                 <div class="bg-gray-800 p-6 rounded-lg text-center">
-                    <img src="./images/weather-app.png" alt="Sorting Algorithm Visualizer" class="rounded-lg mb-4">
-                    <h3 class="text-xl font-bold">Weather Application</h3>
-                    <p class="mt-2">HTML5 | CSS | JavaScript</p>
+                    <img src="./images/weather-app.png" alt="Sorting Algorithm Visualizer"
+                        class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold text-white">Weather Application</h3>
+                    <p class="mt-2 mb-5 text-gray-400">HTML5 | CSS | JavaScript</p>
                     <a href="https://weather-app-innq.onrender.com" target="_blank"
-                        class="text-indigo-500 mt-4 block">Live</a>
+                        class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">View Work →</a>
                 </div>
 
             </div>
@@ -114,18 +148,19 @@
     <!-- Blog Section -->
     <section id="portfolio" class="py-20">
         <div class="container mx-auto px-6">
-            <p class="text-center">What I write!</p>
-            <h1 class="text-7xl font-bold text-center mb-10 underline decoration-indigo-500 pb-10">Blog</h1>
-            <div class="flex flex-col items-center space-y-8">
+            <p class="text-center text-gray-400 mb-3">Here I share my blogs!</p>
+            <h1 class="text-7xl font-bold text-center mb-10 pb-10 underline">
+                Blog</h1>
+            <div class="flex flex-col items-center space-y-8 mt-10">
 
-                <div class="bg-gray-800 p-6 rounded-lg max-w-2xl w-full"> 
+                <div class="bg-gray-800 p-6 rounded-lg max-w-2xl w-full"> <!-- Centered and restricted width -->
                     <h3 class="text-xl font-bold">Spring Security</h3>
                     <h6 class="text-gray-400">18th of October 2024</h6>
-                    <h4 class="text-lg mt-5">Moving from WebSecurityConfigurerAdapter to SecurityFilterChain.</h4>
+                    <h4 class="text-lg mt-5">Explain Spring Security.</h4>
                     <p class="text-gray-400 mt-4">Spring Security is a powerful and highly customizable authentication
                         and access-control framework...</p>
                     <a href="https://medium.com/@ayurana87/spring-security-moving-from-websecurityconfigureradapter-to-securityfilterchain-17d08e4a0609"
-                        class="text-indigo-500 mt-4 block">Read more →</a>
+                        target="_blank" class="text-indigo-500 mt-4 block">Read more →</a>
                 </div>
 
                 <div class="bg-gray-800 p-6 rounded-lg max-w-2xl w-full"> <!-- Centered and restricted width -->
@@ -134,28 +169,59 @@
                     <h4 class="text-lg mt-5">What is Linked List?</h4>
                     <p class="text-gray-400 mt-3">A linked list is a linear data structure that consists of nodes
                         connected by pointers or references...</p>
-                    <a href="https://medium.com/@ayurana87/must-do-linked-list-questions-ebe7c29d47a3"
+                    <a href="https://medium.com/@ayurana87/must-do-linked-list-questions-ebe7c29d47a3" target="_blank"
                         class="text-indigo-500 mt-4 block">Read more →</a>
                 </div>
-                
+
             </div>
         </div>
     </section>
-
-
-    <!-- Footer Section -->
-    <footer class="bg-black py-6">
-        <div class="container mx-auto px-6 text-center">
-            <div class="flex justify-center space-x-6">
-                <a href="https://github.com/AayushiChauhan152" class="text-gray-500 hover:text-white"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/aayushi-chauhan-2b3b1422a/"
-                    class="text-gray-500 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-    </footer>
-
 </body>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typeData = new Typed(".role", {
+        strings: [
+            "Backend developer",
+            "Java Developer",
+            "Python Developer",
+            "Programmer",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    const id = entry.target.getAttribute('id');
+                    const link = document.querySelector(`nav a[href="#${id}"]`);
+
+                    if (entry.isIntersecting) {
+                        link.classList.add('text-indigo-400', 'underline', 'underline-offset-4');
+                    } else {
+                        link.classList.remove('text-indigo-400', 'underline', 'underline-offset-4');
+                    }
+                });
+            },
+            {
+                threshold: 0.6,
+            }
+        );
+
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
+    });
+
+</script>
 
 
 </html>
